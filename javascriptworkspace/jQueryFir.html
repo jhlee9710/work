@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+    //   $(document).ready(function(){
+      $(function () {
+        // $("#txt").css("color", "red"); //document.getElementById("txt")
+        // $(".tit").css("color", "blue");
+        // $("h2").css("color", "green");
+        // $("h1, h2").css("font-size", "50px");
+        // $("h3.tit").css("border", "1px solid #000");
+
+        // $("h1").next().css("color", "red");
+        // $("h1").parent().css("border", "1px solid red");
+
+        // $("#inner_wrap h1").css("color", "blue");
+        // $("#inner_wrap > p").css("color", "pink");
+
+        // $("h1").prev().css("color", "green");
+
+        // $("h1").prev().css({ color: "red", "font-size": "40px" });
+        // $("h1").prevAll().css({ color: "red", "font-size": "40px" });
+        // $("h1").nextAll().css({ color: "green", "font-size": "40px" });
+
+        // $("h1").siblings().css({ color: "red", "font-size": "40px" });
+        // $(".txt1").parents("div").css("border","1px solid red");
+        // $(".txt2").closest("div").css("border","1px solid red");
+
+        // $("#menu li:eq(2)").css("background-color","blue");  // 2번째 인덱스에 있는 값 속성주기
+        // $("#menu li:lt(2)").css("background-color","aqua");  // 2번째 인덱스보다 앞에있는 값 속성주기
+        // $("#menu li:gt(2)").css("background-color","silver");    // 2번째 인덱스보다 뒤에있는 값 속성주기
+        // $("li:last-of-type").css("background-color","red");  
+        // $("#menu1 li:nth-child(1)").css("background-color","red");  // 인덱스번호가 기준이아닌 첫번째 위치에있는 값 배경화면주기
+        // $("#menu1 li:nth-child(2n)").css("background-color","silver");  // 인덱스번호가 기준이아닌 2의배수 위치에있는 값 배경화면주기
+        // $("#menu1 li:nth-last-child(1)").css("background-color","aqua");    // 인덱스번호가 기준이아닌 마지막에서 첫번째 위치에있는 값 배경화면주기
+        // $("#menu1 li").slice(0,2).css("background-color","red") // 인덱스 번호 0번째부터 2번째'앞' 까지 속성부여
+
+        // 선택자의 구성이 배열형식일때
+        // each() / $.each() / $.map() 값을 반복해서 처리하는 함수
+        // let obj = [] 배열 정의
+        // let obj = {} 객체 정의
+
+        // let obj = [
+        //     {"area":"서울"},
+        //     {"area":"부산"},
+        //     {"area":"전주"},
+        // ]
+
+        // $(obj).each(function(i,o){
+        //     console.log(i = ":" + o.area);
+        // })
+
+        // $.each($("#menu2 li"),function(i,o){
+        //     console.log(i = ":" + o);
+        // })
+
+        // $.each($("#menu2 li"),function(i,o){
+        //     $(this).css({"background-color":"red"});
+        // })
+
+        // console.log(obj[0].area);
+        // console.log(obj[1].area);
+        // console.log(obj[2].area);
+
+        // console.log(obj[0]["area"]);
+        // console.log(obj[1]["area"]);
+        // console.log(obj[2]["area"]);
+
+        // let numArr = $.map(obj,function(a,b){
+        //     if(a.area == "서울"){
+        //         return a;
+        //     }
+        // });
+        // console.log(numArr)
+
+        // each() / $.each() 메서드
+        // 1. $("요소 선택").each(function(매개변수1, 매개변수2) {})
+        // 2. $.each($("요소 선택"), function(매개변수1, 매개변수2) {})
+        // 3. $("요소 선택").each(function() {$(this)})
+        // 4. $.each($("요소 선택"),function(){$(this)})
+
+        // let idxNum = $("#menu li").index($("#list3"));
+        // console.log(idxNum);    
+
+       
+
+
+
+
+
+
+
+
+
+
+      });
+    </script>
+  </head>
+  <body>
+    <!-- <h1>선택자</h1>
+    <section>
+        <div>
+            <p class="txt1">내용</p>
+        </div>
+    </section>
+
+    <section>
+        <div>
+            <p class="txt2">내용</p>
+        </div>
+    </section> -->
+
+
+    <!-- <div id="inner_wrap">
+      <p id="txt">jQuery Start</p>
+      <p class="tit">Class selector</p>
+      <h1>그룹 선택자</h1>
+      <h2>요소 선택자</h2>
+      <h3 class="tit">종속 선택자</h3>
+    </div> -->
+    <!-- <script>
+      $("#txt").css("color", "red");
+    </script> -->
+
+    <h1>선택자</h1>
+    <ul id="menu1">
+        <li>내용1</li>
+        <li>내용2</li>
+        <li>내용3</li>
+        <li>내용4</li>
+        <li>내용5</li>
+    </ul>
+
+    <h1>선택자</h1>
+    <ul id="menu2">
+        <li>작업1</li>
+        <li>작업2</li>
+        <li>작업3</li>
+        <li>작업4</li>
+        <li>작업5</li>
+    </ul>
+
+
+  </body>
+</html>

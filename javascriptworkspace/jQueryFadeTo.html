@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+      // $(document).ready(function(){
+      $(function () {
+        // $(".btn2").hide();
+        
+        $(".btn1").on("click",function(){
+            $(".box").slideUp(1000,"linear",function(){       // 시간, 가속도, 콜백함수
+                $("btn1").hide();
+                $("btn2").show();
+            });   
+        });
+
+        $(".btn2").on("click",function(){
+            $(".box").fadeIn(1000,"swing",function(){       // 시간, 가속도, 콜백함수
+                $("btn1").show();
+                $("btn2").hide();
+            });   
+        });
+
+        $(".btn3").on("click",function(){
+            $(".box").slideToggle(1000,"linear")
+        });
+
+
+      });
+    </script>
+
+    <style>
+        .content{
+            width: 400px;
+            background-color: #eee;
+        }
+    </style>
+  </head>
+    <script>
+
+    </script>
+  <body>
+      <p>
+        <button class="btn1">slideUp</button>
+        <button class="btn2">fadeIn</button>
+      </p>
+      <p>
+        <button class="btn3">toggleSide</button>
+      </p>
+      <p>
+        <button class="btn4">fadeTo(0.3)</button>
+        <button class="btn5">fadeTo(1)</button>
+      </p>
+      <div class="box">
+        <div class="content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus amet sapiente magni modi, voluptatum dolores corrupti exercitationem officiis odit dolorem commodi, similique, illo laudantium quod ipsa deserunt sunt! Vitae, est.Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus amet sapiente magni modi, voluptatum dolores corrupti exercitationem officiis odit dolorem commodi, similique, illo laudantium quod ipsa deserunt sunt! Vitae, est.Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus amet sapiente magni modi, voluptatum dolores corrupti exercitationem officiis odit dolorem commodi, similique, illo laudantium quod ipsa deserunt sunt! Vitae, est.Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus amet sapiente magni modi, voluptatum dolores corrupti exercitationem officiis odit dolorem commodi, similique, illo laudantium quod ipsa deserunt sunt! Vitae, est.Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus amet sapiente magni modi, voluptatum dolores corrupti exercitationem officiis odit dolorem commodi, similique, illo laudantium quod ipsa deserunt sunt! Vitae, est.Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus amet sapiente magni modi, voluptatum dolores corrupti exercitationem officiis odit dolorem commodi, similique, illo laudantium quod ipsa deserunt sunt! Vitae, est.
+        </div>
+      </div>
+  </body>
+  
+</html>

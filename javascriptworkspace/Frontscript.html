@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- script src="myscript.js"></script -->
+    
+    <script>
+        /* 태그를 제어 */
+        /* alert("Hello World") */
+        /*
+        document.write("환영합니다." + "<br>");   // <body> 브라우저 화면에 결과를 출력 역할
+        
+        var age;
+        age = 10;
+        document.write(age);
+        document.write("<br>"); // 줄바꿈 문자
+
+        age = 20;
+        document.write(age + "<br>");   // 출력과 줄바꿈
+
+        age = "hello";      // var형식은 타입체크를 하지 않는다.
+        document.write(age + "<br> ");
+
+        var age = "안녕";       // 같은 이름으로 변수를 여러번 선언이 가능
+        document.write(age + "<br> ");
+
+        var name;       // undefined
+        document.write(name + "<br>");
+        
+        name = "홍길동";    // var 선언된 변수의 호이스팅 (hoisting)
+    
+
+        // 문자
+        // 숫자
+        // 날짜
+        // 논리형
+        var a,b,c,d;
+        a=2;    
+        b="d";
+        d=1;
+        c=a+b+d;
+        document.write(c + "<br>"); // 2d1
+        c=a+d+b;
+        document.write(c + "<br>"); // 3d
+        c=a-b+d;
+        document.write(c + "<br>"); // NaN
+        c=a-d+b;
+        document.write(c + "<br>"); // 1d
+
+        // E56
+        // var, let, cont
+
+        // var
+        // 1. 같은 이름으로 변수 선언가능
+        // 2. 호이스팅 가능
+        // 3. 전역변수
+
+        // let 
+        //1. 같은 이름으로 변수 선언 불가 
+        //2. 호이스팅 불가
+        //3. 블록레벨 스코프
+        
+        let num;
+        num = 1;
+        document.write(num + "<br>");
+
+        num = 100;
+        document.write(num + "<br>");
+
+        num = "홍길동";
+        document.write(num + "<br>");
+
+        let num2    // 같은 이름의 변수 선언할 수 없다.
+        num2 = 1000;
+        document.write(num2 + "<br>");
+        */
+        var x = 1;
+        if(true){
+            var x = 5;
+        }
+
+        document.write(x + "<br>")  // 5
+
+        let y = 1;
+        if(true){
+            let y = 5;
+        }
+
+        document.write(y + "<br>")  // 1
+
+        const name = "hong";
+        document.write(name + "<br>")
+
+        // name = "kim";   // error
+        // document.write(name + "<br>")
+
+        
+
+
+    </script>
+</head>
+
+<body>
+    <button type="button" onclick="javascript:alert('Hello world!!');">경고창 실행</button>
+
+
+
+    <script>
+
+    </script>
+</body>
+</html>

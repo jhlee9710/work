@@ -1,0 +1,36 @@
+__filename 은 현재 실행 중인 파일 경로
+
+__dirname 은 현재 실행 중인 폴더 경로
+
+filename :  C:\work\nodeworkspace\bar.js
+dirname :  C:\work\nodeworkspace
+
+console.log('숫자: %d : ',32)
+console.log('문자열: %s : ', hello);
+console.log('JSON: %j '(name:', Hong'));
+
+exports객체와 모듈
+
+main.js
+
+module.js
+
+node.js api
+
+내장 모듈
+
+- url
+- Query String
+- crypto
+- File System
+
+이벤트
+on()
+emit()
+EventEmitter객체
+
+http 모듈
+웹서버의 구성을 위해 사용한다.
+- server 객체
+- response 객체
+- request 객체

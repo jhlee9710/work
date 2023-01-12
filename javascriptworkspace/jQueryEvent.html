@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+      // $(document).ready(function(){
+      $(function () {
+
+        // $(".btn1").click(function(){
+        //     $(".btn1").parent().next().css("color","red");  // 버튼1을 누르면 p태그 다음인 내용1에 red속성
+        // });
+
+        // $(".btn2").on({
+        //     "mouserover focus":function(){
+        //         $(".btn2").parent().next().css("color","green");
+        //     }
+        // });
+
+        // $("btn1").off("click");
+        // $("btn2").off("mouseover");
+
+        // =====================================================
+
+        // $(".btn1").on({
+        //     "mouseover" : function(){
+        //         $(".txt1").css({"background-color" : "yellow"});
+        //     },
+        //     "mouseout" : function(){
+        //         $(".txt1").css({"background" : "none"});
+        //     } 
+        // });
+
+        // $(".btn2").hover(function(){
+        //     $(".txt2").css({"background-color" : "aqua"});
+        // }, function(){
+        //     $(".txt2").css({"background" : "none"});
+        // });
+
+        // $(".btn1").on({
+        //     "mouseenter" : function(){
+        //         $(".txt1").css({"background-color" : "yellow"});
+        //     },
+        //     "mouseleave" : function(){
+        //         $(".txt1").css({"background" : "none"});
+        //     } 
+        // });
+
+        // ================================================
+        // $(document).on("mousemove", function(e){
+        //     $(".posX").text(e.pageX);
+        //     $(".posY").text(e.pageY);
+
+        //     // text()
+        //     // val()
+                
+        // })
+
+        // $(window).on("scroll",function(){
+        //     let sc_top = $(this).scrollTop();
+        //     let sc_left = $(this).scrollLeft();
+        
+
+        // $(".top").text(sc_top);
+        // $(".left").text(sc_left);
+
+        // if(sc_top <= 200){
+        //     $("body").css("background-color","red");
+        // }else if(sc_top <= 500){
+        //     $("body").css("background-color","yellow");
+        // }else if(sc_top <= 2000){
+        //     $("body").css("background-color","pink");
+        // }
+
+        // });
+
+        // ================================================= 포커스 이벤트 focus/blur
+
+        // $("#user_id_1").on("focus", function(){
+        //     $(this).css({
+        //         "background-color" : "pink"
+        //     });
+        // });
+        // $("#user_id_1").on("blur", function(){
+        //     $(this).css({
+        //         "background-color" : "#fff"
+        //     });
+        // });
+
+        // ============================================== 체인지 이벤트 cahnge()
+
+        // $("#rel_site").on("change", function(){
+        //     $(".txt").text($(this).val());
+        // });
+
+        // $("#id").on("change",function(){
+        //     $(".txt").text($(this).val());
+        // })
+
+        // ================================================ 키보드 이벤트 keydown(필터링)
+
+        let words = ["집","퇴근","귀가"]
+        $("#id").on("keydown", function(){
+            let term = $(this).val();
+            $(".txt").text(term);
+
+            for(let i = 0;i<3;i++){
+                if(term == words[i]){
+                    $(".txt").text("사용이 불가한 단어 입니다.")
+                }
+            }
+        });
+
+        // on() -> off()
+        // bind() -> unbind()
+
+
+        
+
+      });
+    </script>
+
+    <style>
+        /* body{
+            height: 10000px;
+            width: 5000px;
+        }
+
+        #wrap{
+            position: fixed;
+            left: 10px;
+            top: 10px;
+        } */
+    </style>
+  </head>
+  <body>
+    
+    <!-- <p>
+        <button class="btn1">버튼1</button>
+    </p>
+    <p>내용1</p>
+    <p>
+        <button class="btn2">버튼2</button>
+    </p>
+    <p>내용2</p> -->
+    
+
+    <!-- =================================================== -->
+
+    <!-- <p>
+    <button class="btn1">Mouse Over/Mouse Out</button>
+    </p>
+    <p class="txt1">내용1</p>
+    <p>
+        <button class="btn2">Hover</button>
+    </p>
+    <p class="txt2">내용2</p> -->
+
+
+    <!-- ======================================================== -->
+
+    <!-- <h1>mousemove</h1>
+    <p>X : <span class="posX">0</span>px</p>
+    <p>Y : <span class="posY">0</span>px</p> -->
+
+    <!-- ======================================================== -->
+
+    <!-- <div id="wrap">
+        <p>scrollTop: <span class="top">0</span>px</p>
+        <p>scrollLeft: <span class="left">0</span>px</p>
+    </div> -->
+    
+    <!-- ======================================================= 포커스이벤트 focus/blur-->
+
+    <!-- <h1>focus / blur</h1>
+    
+    <p>
+        <label for="user_id_1">ID</label>
+        <input type="text" name="user_id_1" id="user_id_1">
+    </p>
+    <p>
+        <label for="user_pw_1">PW</label>
+        <input type="password" name="user_pw_1" id="user_pw_1">
+    </p> -->
+
+    <!-- ====================================================== change() 이벤트 메서드 -->
+
+    <!-- <p>
+        <label for="user_id_1">ID</label>
+        <input type="text" name="id" id="id">
+    </p>
+    <br>
+
+    <select id="rel_site">
+        <option value="">사이트 선택</option>
+        <option value="www.google.com">구글</option>
+        <option value="www.naver.com">네이버</option>
+        <option value="www.daum.net">다음</option>
+    </select>
+    <p class="txt"></p> -->
+   
+    <!-- ==================================================================== 필터링 -->
+
+    <h1>금지어 필터링</h1>
+    <label>댓글 : </label>
+    <input type="text" name="id" id="id">
+    <p class="txt"></p>
+    
+
+  </body>
+  
+</html>

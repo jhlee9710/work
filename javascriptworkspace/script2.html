@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ri{
+            float: left;
+            margin-left: 30%;
+        }
+        .le{
+            float: left;
+        }
+        .re{
+            float: left;
+            margin-left: 18%;
+        }
+        .me{
+            float: left;
+            margin-left: 18%;
+        }
+        .co{
+            float: left;
+            margin-left: 140px;
+            clear: both;
+        }
+    </style>
+    <script>
+        // let today = new Date(); // 속성, 기능
+        // document.write(today.getFullYear() + "<br>");
+        // document.write(today.getMonth()+1 + "<br>");    // 0 ~ 11
+        // document.write(today.getDate()+"<br>");
+        // document.write(today.getDay() + "<br>");    // 0 ~ 6
+
+        // let day = today.getDay();
+
+        // switch(day){
+        //     case 0: document.write("일요일");
+        //     break;
+        //     case 1: document.write("월요일");
+        //     break;
+        //     case 2: document.write("화요일");
+        //     break;
+        //     case 3: document.write("수요일");
+        //     break;
+        //     case 4: document.write("목요일");
+        //     break;
+        //     case 5: document.write("금요일");
+        //     break;
+        //     case 6: document.write("토요일");
+        //     break;
+        // }
+
+        // document.write("<br>====================================<br>")
+
+        // today.setFullYear(2000);
+        // today.setMonth(0);
+        // today.setDate(1);
+
+        // day = today.getDay();
+
+        // document.write(today.getFullYear() + "<br>");
+        // document.write(today.getMonth()+1 + "<br>");    // 0 ~ 11
+        // document.write(today.getDate()+"<br>");
+        // document.write(today.getDay() + "<br>");    // 0 ~ 6
+
+        // switch(day){
+        //     case 0: document.write("일요일");
+        //     break;
+        //     case 1: document.write("월요일");
+        //     break;
+        //     case 2: document.write("화요일");
+        //     break;
+        //     case 3: document.write("수요일");
+        //     break;
+        //     case 4: document.write("목요일");
+        //     break;
+        //     case 5: document.write("금요일");
+        //     break;
+        //     case 6: document.write("토요일");
+        //     break;
+        // }
+
+        // document.write("<br>====================================<br>")
+
+        // let start = new Date(2000,1,1)
+
+        // day = today.getDay();
+
+        // document.write(start.getFullYear() + "<br>");
+        // document.write(start.getMonth()+1 + "<br>");    // 0 ~ 11
+        // document.write(start.getDate()+"<br>");
+        // document.write(start.getDay() + "<br>");    // 0 ~ 6
+
+    
+
+        // document.write("<br>====================================<br>")
+
+        // let today = new Date();
+        // let nowYear = today.getFullYear();
+
+        // let theDate = new Date(nowYear, 11, 31)
+        // let diffDate = theDate.getTime() - today.getTime();
+
+        // let result = Math.ceil( diffDate / (60 * 1000 * 60 * 24));
+        // document.write("연말 D-day: " + result + "일 남았습니다.");
+
+        // =========================================================
+
+        // (int)(Math.random() * 10) + 1 // 1 ~ 10 자바
+
+        // for(let i=1;i<=10;i++){
+        //     let ran = Math.floor(Math.random() * 10) + 1 // 자바 스크립트
+        //     document.write(ran + "<br>");
+
+        // }
+
+        // document.write("<h1>1.가위 2.바위 3.보   게임</h1>");
+
+        // let me = prompt("숫자입력","0");
+
+        // let com = Math.floor(Math.random() * 3 ) + 1;
+
+        // document.write("<h2>컴퓨터</h2>");
+
+        // document.write("<img src=../image/math_img_" + com + ".jpg >");
+
+        // document.write("<h2>나</h2>");
+
+        // document.write("<img src=../image/math_img_" + me + ".jpg >");
+
+        // if(com == me){
+        //     document.write("<img src=../image/rspw.jpg>");
+        // }else{
+        //     document.write("<img src=../image/rspl.jpg>");
+        // }
+
+
+        document.write("<h1>1.가위 2.바위 3.보   게임</h1>");
+
+        let me = prompt("숫자입력","0");
+
+        let com = Math.floor(Math.random() * 3 ) + 1;
+
+        document.write("<img src=../image/math_img_" + com + ".jpg class=le>");
+        document.write("<img src=../image/math_img_" + me + ".jpg class=ri>");
+
+        document.write("<br>");
+
+        document.write("<h2 class=co>COM</h2>");
+        
+        if((me!=3 || com!=1) && (me!=1 || com!=3)) {  // me=1 com2    me2 com2    me2 com3       me2 com1      me3 com2
+			if(me>com) {
+				document.write("<h1 class=re>you win</h1>");
+			}if(com>me) { 
+				document.write("<h1 class=re>you lose</h1>");
+			}
+		}
+		if(me==1 && com==3) {
+			document.write("<h1 class=re>you win</h1>");
+		}
+        if(me==3 && com==1) {
+			document.write("<h1 class=re>you lose</h1>");
+		}
+		if(me==com) {
+			document.write("<h1 class=re>tie break</h1>");
+		}
+		
+
+        document.write("<h2 class=me>ME</h2>");
+  
+        
+    
+
+        // let i = 1;
+        // let t = "<table>"
+
+        // document.write("<h1>구구단표</h1>")
+        // for(let i=1;i<=9;i++){
+        //     t+="<tr>"
+        //     for(let j=1;j<=9;j++){
+        //         if(i%2==1){
+        //             t += "<td class='blue'>" + i*j + "</td>"
+        //         }else{
+        //             t += "<td class='red'>" + i*j + "</td>"
+        //         }
+        //     }
+        // }
+        
+        // t += "</table>"
+        // document.write(t);
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <style>
+        .red{
+            background-color: red;
+        }
+        .blue{
+            background-color: blue;
+        }
+        .green{
+            background-color: green;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        #box_wrap{
+            width:300px;
+            height:200px;
+            margin:50px auto;
+            position: relative;
+            background-color:#ccc;
+        }
+        .box{
+            width:50px; height:50px;
+            position:absolute;
+            left:100px; top:50px;
+            background-color:#f00;
+        }
+
+        body{
+            line-height:1;
+        }
+        #wrap{
+            height:5000px;          
+            padding-top:2000px;
+            width:5000px;
+        }
+
+    </style>
+    <script>
+      // $(document).ready(function(){
+      $(function () {
+
+    
+   
+        // 객체조작 메소드
+        // 생성, 복제, 삭제, 속성 변화
+
+        // html() => 태그의 정보를 읽기
+        // html("값") => 태그의 정보를 변경
+        // text()
+        // text("값")
+        // <p> 내용 </p>    // <p> : 태그    내용 : 텍스트
+
+        // 일반태그 : <span> => text()
+        // 폼 태그 : <form> <input> <textarea> => val()
+            
+        // css() : css효과를 직접정의해서 적용
+        // addClass() : <style> 에 작성된 class 속성을 가져와서 적용
+
+        // let srcval = $("img").attr("src");
+        // console.log(srcval);
+
+        // $("img").attr("src","../image/math_img_2.jpg");
+
+        // $("")
+
+        // $("#p1").addClass("red");       // p1에 red속성 추가
+        // $("#p2").addClass("blue");      // p2에 blue속성 추가
+        // $("#p3").removeClass("green")   // p3에 green속성 제거
+
+        // =====================================================
+
+        // let $txt1 = $(".txt_1 span");
+        // let $txt2 = $(".txt_2 span");
+        // let $box = $(".box");
+        
+        // let off_t = $box.offset().top;      // 100
+        // let pos_t = $box.position().top;    // 50
+
+        // $txt1.text(off_t);  // 절대좌표
+        // $txt2.text(pos_t);  // 상대좌표
+
+        // ==================================================
+
+        let topNum = $("h1").offset().top;
+        $(window).scrollTop(topNum);
+
+        let sct = $(window).scrollTop();
+        console.log(sct);
+
+        if(sct == 2000){
+        $("body").css("background-color","aqua");
+        }
+
+        /*
+        // let leftNum = $("h1").offset().left; 
+        // $(window).scrollLeft(leftNum);
+
+        // let scl = $(window).scrollLeft();
+        // console.log(scl);
+
+        // let rightNum = $("h1").offset().right;
+        // $(window).scrollRight(rightNum);
+
+        // let scr = $(window).scrollRight();
+        // console.log(scr);
+        */
+
+
+  });
+    </script>
+</head>
+<body>
+
+    <!-- <form action="text" value="홍길동" id="user_name">
+        
+    </form> -->
+
+    <!-- <p id="p1">내용1</p>
+    <p id="p2">내용2</p>
+    <p id="p3" class="green">내용3</p> -->
+
+
+    <!-- <img src="../image/math_img_1.jpg" alt="가위"> -->
+
+
+    <!-- <div id="box_wrap">
+        <p class="box">박스</p>
+    </div>
+    <p class="txt_1">절대 top위치값: <span></span></p>
+    <p class="txt_2">상대 top위치값: <span></span></p> -->
+
+    <div id="wrap">
+        <h1>위치 메서드</h1>
+    </div>
+
+
+</body>
+</html>
