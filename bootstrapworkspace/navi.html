@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <title>Document</title>
+
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <style>
+        .col-md-1, .col-md-8, .col-md-4, .col-md-12{
+            border: 1px solid red;
+        }
+        .row{
+            margin-bottom:4px;
+            margin-top: 4px;
+        }
+
+    </style>
+    
+</head>
+<body>
+
+    <div class="container"> <!-- container: 정해진 width값이 존재함(width 1170)  container-fluid: width100%값으로 나타내줌 -->
+        <!-- 탭형 네비게이션 -->
+        <ul class="nav nav-tabs">
+            <li><a href="#">메뉴1</a></li>
+            <li><a href="#">메뉴2</a></li>
+            <li><a href="#">메뉴3</a></li>
+            <li><a href="#">메뉴4</a></li>
+        </ul>
+        <br><br>
+
+        <ul class="nav nav-tabs">
+            <li><a href="#">메뉴1</a></li>
+            <li class="active"><a href="#">메뉴2</a></li> <!-- active 시작할때 메뉴가 선택됨 -->
+            <li><a href="#">메뉴3</a></li>
+            <li><a href="#">메뉴4</a></li>
+        </ul>
+
+        <br><br>
+        <!-- 알약형 네비게이션 -->
+
+        <ul class="nav nav-pills">
+            <li><a href="#">메뉴1</a></li>
+            <li><a href="#">메뉴2</a></li>
+            <li><a href="#">메뉴3</a></li>
+            <li><a href="#">메뉴4</a></li>
+        </ul>
+        <br><br>
+        <ul class="nav nav-pills">
+            <li><a href="#">메뉴1</a></li>
+            <li class="active"><a href="#">메뉴2</a></li>
+            <li><a href="#">메뉴3</a></li>
+            <li><a href="#">메뉴4</a></li>
+        </ul>
+        <br><br>
+
+        <div class="col-md-3">
+            <ul class="nav nav-pills nav-stacked">
+                <li><a href="#">메뉴1</a></li>
+                <li><a href="#">메뉴2</a></li>
+                <li><a href="#">메뉴3</a></li>
+                <li><a href="#">메뉴4</a></li>
+            </ul>
+            <br><br>
+        </div>
+        <div class="clearfix"></div>
+        <ul class="nav nav-pills nav-justified">
+            <li><a href="#">메뉴1</a></li>
+            <li class="active"><a href="#">메뉴2</a></li>
+            <li><a href="#">메뉴3</a></li>
+            <li class="disabled"><a href="#">메뉴4</a></li>
+        </ul>
+        <br><br>
+
+        <ul class="nav nav-tabs">
+            <li><a href="#">메뉴1</a></li>
+            <li><a href="#">메뉴2</a></li>
+            <li><a href="#">메뉴3</a></li>
+            <li class="dropdown">
+                <a data-toggle="dropdown" href="#">여기클릭<span class="caret"></span>  <!-- sapn caret: 옆에 조그맣게 삼각형을 띄워서 메뉴가 있다는걸 알려줌 -->    
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">메뉴1</a></li>
+                        <li><a href="#">메뉴2</a></li>
+                        <li><a href="#">메뉴3</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">기타메뉴</a></li>
+                    </ul>
+                </a> 
+            </li>
+        </ul>
+
+        <br><br><br><br><br><br><br>
+
+            
+    </div>
+    
+   
+
+
+   <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+   <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

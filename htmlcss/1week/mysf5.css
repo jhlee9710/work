@@ -1,0 +1,50 @@
+#container{
+    position: relative;
+    float: left;
+    background-color: rgba(83, 131, 230 ,0.6);
+}
+
+.banner{
+    float: left;
+    width: 70%;
+    margin-top: 50px;
+}
+
+.banner ul{
+    margin-left: 30%;
+    margin-top: 2%;
+    list-style-type: none;
+}
+.banner ul li{
+    display: inline;
+    float: left;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.banner2{
+    height: 50px;
+    background-color: yellow;
+    margin: 0 auto;
+    clear: both;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.search{
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background-color: rgba(83, 131, 230 ,0.6);
+    color: rgba(83, 131, 230 ,0.6);
+   
+}
+
+.mainimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+

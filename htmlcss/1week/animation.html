@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 이동 */
+        /* translate */
+/*
+        .movex:hover{
+            transform: translateX(50px);
+        }
+        .movey:hover{
+            transform: translateY(50px);
+        }
+        .movexy:hover{
+            transform: translate(10px,20px);
+        }
+*/
+        /* 확대 / 축소 */
+        /* scale */
+  /*      .movex:hover{
+            transform: scalex(1.2);
+        }
+        .movey:hover{
+            transform: scaley(1.2);
+        }
+        .movexy:hover{
+            transform: scale(0.7);
+        }*/
+        .origin{
+            width: 210px;
+            height: 200px;
+            border: 1px solid black;
+            float: left;
+            margin: 40px;
+        }
+        /*.cb{
+            clear: both;
+            float: left;
+            margin-bottom: 40px;
+            border: 1px solid black;
+        }*/
+        .scalex:hover{
+            transform: rotateX(45deg);
+        }
+        .scaley:hover{
+            transform: rotateY(45deg);
+        }
+        .scale:hover{
+            transform: rotateZ(45deg)
+        }
+        .tr1{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            /*transition-property: width, height; /* tr1의 hover변경시 duration의 시간대처럼 늘어남*/
+            /*transition-duration: 2s, 1s;    */
+            transition-property: backgrond-color, transform, width, height;
+            transition-duration: 2s, 3s;  
+        }
+        /tr1:hover{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            transform: rotate(100deg)
+        }
+        /* 애니메이션 효과 */
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            animation-name:change-bg;
+            animation-duration: 3s;
+            
+        }
+        @keyframes change-bg {
+            /* 0%~100% */
+           0%{
+                background-color: chartreuse;
+            }
+            25%{
+                background-color: yellow;
+            }
+            50%{
+                background-color: slateblue;
+            }
+            75%{
+                background-color: pink;
+            }
+            100%{
+                background-color: black;
+            }
+            /*from{
+                background-color: aqua;
+                border: 1px solid black;
+            }
+            to{
+                background-color: violet;
+                border: 2px double yellow;
+                border-radius: 50%;
+            }*/
+
+        }
+    </style>
+    
+</head>
+<body>
+    <!-- div class="origin movex cb scalex"><img src="C:\work\htmlcss\image\dog2.png"></div>
+    <div class="origin movey cb scaley"><img src="C:\work\htmlcss\image\dog2.png"></div>
+    <div class="origin movexy cb scale" ><img src="C:\work\htmlcss\image\dog2.png"></div -->
+    <div class="tr1"></div>
+</body>
+</html>

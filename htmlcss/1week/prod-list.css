@@ -1,0 +1,41 @@
+prod-list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.prod-list li {
+    position: relative;
+    float: left;
+    padding: 0;                                                                                                                                                                                                                                                                                                                                                                                  
+    margin: 10px;
+    overflow: hidden;
+}
+
+.prod-list li img{
+    margin: 0;
+    padding: 0;
+    float: left;
+    z-index: 5;
+}
+
+.prod-list .caption{
+    position: absolute;
+    top: 200px;
+    width: 300px;
+    height: 200px;
+    padding-top:20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    z-index: 10;
+}
+.prod-list li:hover .caption{
+    opacity: 1;
+    transform: translateY(-200px);
+    transition-property: transform;
+    transition-duration: 0.2s;  
+}
+.prod-list .caption h1, .prod-list .caption p{
+    color: white;
+    text-align: center;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     /*{속성:값; 속성:값; 속성:값}*/
+     /* * {color: red;} */
+     /*p {font-size: 50px;}
+     h1 {font-size: 70px;}*/
+
+     /* 플러스 선택지*/
+     .bluetext {color: blue;}
+     .redtext {color: red;}
+     .textsize30 {font-size: 30px;}
+
+     /* 아이디 선택지 : 효과를 하나만 적용가능 */
+     #bluetext {color: blue;}
+     #textsize30 {font-size:30px;}
+     #textsize50 {font-size:50px;}
+
+     /* 그룹선택지 */
+     h1, h2, span {color:green;}
+
+     /* 선택지 우선순위: 마지막에 실행된걸 우선적으로 처리한다. */
+     p{ color : blue !important;} /* !important: 우선순위가 되도록 만들어준다 */
+     p{ color : red;}
+     /* css의 상속 */   /* 일부 속성은 상속에서 제외 */
+     body {color : red;}
+
+    </style>
+</head>
+<body>
+    기본글자입니다.
+    <!-- p class="bluetext textsize100">첫번째 p태그 입니다.</p>
+    <p class="redtext textsize100">두번째 p태그 입니다.</p>
+
+
+    <p id = "textsize30 bluetext">세번째 p태그 입니다.</p>
+    <p id = "textsize50 bluetext">네번째 p태그 입니다.</p -->
+
+    <p>다섯번째 p태그 입니다</p>
+
+    <h1>h1태그 입니다.</h1>
+    <h2>h2태그 입니다.</h2>
+    <span>span태그 입니다.</span>
+    
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <title>Document</title>
+
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <style>
+        .box{
+            width: 300px;
+            border: 1px solid #000;
+            border-radius: 5px;
+            height: 100px;
+            padding: 10px;
+            box-shadow: 0 0 5px #ccc;
+        }
+        .box1{
+            width: 200px;
+            border: 1px solid #000;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 0 10px;
+        }
+        .logo{
+            background-image: url(../htmlcss/image/logo1.jpg);
+            background-repeat: no-repeat;
+            width: 317px;
+            height: 60px;
+        }
+
+    </style>
+    
+</head>
+<body>
+
+    <div class="container"> <!-- container: 정해진 width값이 존재함(width 1170)  container-fluid: width100%값으로 나타내줌 -->
+        <h4 class="text-primary">헬퍼 클래스</h4>
+        <div class="box">
+            <button type="button" class="close" aria-hidden="true">x</button>
+        </div>
+        <h5> float정렬</h5>
+        <p>
+            <section class="box1 pull-right">
+                이 부분은 pull-right를 적용해준 상태입니다. 따라서 오른쪽에 박스가 배치되어 있습니다.
+            </section>
+            <section class="box1 pull-left">
+                이 부분은 pull-left를 적용해준 상태입니다. 따라서 왼쪽에 박스가 배치되어 있습니다.
+            </section>
+            <div class="clearfix"></div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sint ut voluptates hic a enim ducimus. Consequuntur voluptas rerum quos reprehenderit ad libero cumque eveniet dignissimos fugiat? Ipsum, commodi. Repellat!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sint ut voluptates hic a enim ducimus. Consequuntur voluptas rerum quos reprehenderit ad libero cumque eveniet dignissimos fugiat? Ipsum, commodi. Repellat!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sint ut voluptates hic a enim ducimus. Consequuntur voluptas rerum quos reprehenderit ad libero cumque eveniet dignissimos fugiat? Ipsum, commodi. Repellat!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sint ut voluptates hic a enim ducimus. Consequuntur voluptas rerum quos reprehenderit ad libero cumque eveniet dignissimos fugiat? Ipsum, commodi. Repellat!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sint ut voluptates hic a enim ducimus. Consequuntur voluptas rerum quos reprehenderit ad libero cumque eveniet dignissimos fugiat? Ipsum, commodi. Repellat!
+        </p> 
+        
+        <div class="show">콘텐츠 보임</div>
+        <div class="hide">콘텐츠 안보임</div>
+
+        <hr>
+        <h1 class="text-hide logo">asdfqwerzxcv</h1>
+
+
+    </div>
+    
+   
+
+
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/cesiumjs/1.78/Build/Cesium/Cesium.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 색상 속성 */
+        /*
+        1.색상을 직접지정
+        2.16진수를 지정
+        3.rgb()
+        4.rgba()
+        */
+
+        /*.colorstyle{
+            /* color: red */
+            /* color: rgb(233, 211, 57) */
+            /* color : #ff2316 */
+            /* color: rgba(123, 162, 112, 1) */
+            /* background-color: #d23535; */
+        /*}
+        /*body{
+            /* background-color: #ffe4c4;*/
+            /* background-image: url("sea.jpg"); */
+            /* background-position: right top;    /* 이미지 위치 조정 */
+            /* background-position: 240px 200px;   /* 이미지 위치 픽셀 조정 */
+            /* background-repeat:no-repeat;        /* 이미지를 반복하지 않는다 */
+            /* background-repeat:repeat-x;     /* 이미지를 x축으로 반복한다 */
+            /* background-repeat:repeat-y;     /* 이미지를 y축으로 반복한다 */
+            /* background-size: 70%, 70;          /* 이미지 사이즈 조정 */
+        /*}*/
+
+        body{
+            font-family: "맑은 고딕";
+        }
+        .container{
+            position: relative;
+            background-image: url("image/apple.jpg");
+            background-repeat: no-repeat;
+            width: 600px;
+            height: 400px;
+            padding: 20px; 
+        }
+        .content{
+            position:absolute;
+            top: 300px;
+            width: 90%;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.5)
+        }
+        h1{
+           font-size: 30px;
+           text-align: center; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>하루 한 알의 사과는 의사를 멀리 한다</h1>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <title>Document</title>
+
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <style>
+        .col-md-1, .col-md-8, .col-md-4, .col-md-12{
+            border: 1px solid red;
+        }
+        .row{
+            margin-bottom:4px;
+            margin-top: 4px;
+        }
+
+    </style>
+    
+</head>
+<body>
+
+    <div class="container"> <!-- container: 정해진 width값이 존재함(width 1170)  container-fluid: width100%값으로 나타내줌 -->
+        <form>
+            <label for="text">이름</label>
+            <input type="text" placeholder="이름">
+            <label for="emailaddress">이메일</label>
+            <input type="email" placeholder="이메일">
+            <button type="submit">확인</button>
+        </form>
+
+        <h4 class="text-primary">부트스트랩을 이용하여 폼을 변형</h4>
+        <form role="form">
+            <div class="form-group">
+                <label for="text">이름</label>
+                <input type="text" class="form-control" placeholder="이름">
+            </div>
+            <div class="form-group">
+                <label for="emailaddress">이메일</label>
+                <input type="email" class="form-control" placeholder="이메일">
+            </div>
+            <div class="form-group">
+                <button type="submit">확인</button>
+            </div>
+        </form>
+
+        <h4 class="text-primary">부트스트랩 인라인 폼</h4>
+        <form role="form" class="form-inline">
+            <div class="form-group">
+                <label for="text">이름</label>
+                <input type="text" class="form-control" placeholder="이름">
+            </div>
+            <div class="form-group">
+                <label for="emailaddress">이메일</label>
+                <input type="email" class="form-control" placeholder="이메일">
+            </div>
+            <div class="form-group">
+                <button type="submit">확인</button>
+            </div>
+        </form>
+
+        <h4 class="text-primary">label에 .sr-only class 속성적용</h4>
+        <form role="form" class="form-inline">
+            <div class="form-group">
+                <label for="text" class="sr-only">이름</label>
+                <input type="text" class="form-control" placeholder="이름">
+            </div>
+            <div class="form-group">
+                <label for="emailaddress" class="sr-only">이메일</label>
+                <input type="email" class="form-control" placeholder="이메일">
+            </div>
+            <div class="form-group">
+                <button type="submit">확인</button>
+            </div>
+        </form>
+
+        <h4 class="text-primary">수평의 폼 출력 class="form.horizontal"</h4>
+        <form role="form" class="form.horizontal">
+            <div class="form-group">
+                <label for="text" class="col-xs-2 col-lg-2 control-label">이름</label>
+                <div class="col-xs-10 col-lg-10">
+                    <input type="text" class="form-control" placeholder="이름">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="emailaddress" class="col-xs-2 col-lg-2 control-label">이메일</label>
+                <div class="col-xs-10 col-lg-10">
+                    <input type="email" class="form-control" placeholder="이메일">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-xs-offset-2 col-xs-10 col-lg-offset-2 col-lg-10"></div>
+                <button type="submit">확인</button>
+            </div>
+        </form>
+
+        <form role="form">
+            <h5>textarea</h5>
+            <textarea rows="5" class="form-control"></textarea>
+
+            <h5> input type="checkbox"</h5>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="">
+                    체크박스1
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="">
+                    체크박스2
+                </label>
+            </div>
+
+            <h5>input type="radio"</h5>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios" checked>
+                    라디오버튼1
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionsRadios" checked>
+                    라디오버튼2
+                </label>
+            </div>
+
+            <h5> 인라인 체크 박스 label class="checkbox-inline</h5>
+            <label for="checkbox-inline">
+                <input type="checkbox" value="체크박스1">
+            </label>
+            <label for="checkbox-inline">
+                <input type="checkbox" value="체크박스2">
+            </label>
+            <label for="checkbox-inline">
+                <input type="checkbox" value="체크박스3">
+            </label>
+
+            <h5>인라인 라디오 label class="radio-inline"</h5>
+            <label for="radio-inline">
+                <input type="radio" value="체크박스1">
+            </label>
+            <label for="radio-inline">
+                <input type="radio" value="체크박스2">
+            </label>
+            <label for="radio-inline">
+                <input type="radio" value="체크박스3">
+            </label>
+
+            <h5>input-lg, 기본값, input-sm 일 경우 크기 비교</h5>
+            <input type="text" class="form-control input-lg" placeholder="input-lg"><br>
+            <input type="text" class="form-control" placeholder="default"><br>
+            <input type="text" class="form-control input-sm" placeholder="input-sm"><br>
+
+            <h5>그리드 시스템을 이용해서 컬럼 크기 조절</h5>
+            <div class="row">
+                <div class="col-sm-2 col-lg-2">
+                    <input type="text" class="form-control" placeholder="col-sm-2 col-lg-2">
+                </div>
+                <div class="col-sm-3 col-lg-3">
+                    <input type="text" class="form-control" placeholder="col-sm-3 col-lg-3">
+                </div>
+                <div class="col-sm-4 col-lg-4">
+                    <input type="text" class="form-control" placeholder="col-sm-4 col-lg-4">
+                </div>
+            </div>
+
+            <!-- <button></button> | <input> | <a></a> -->
+            <h4 class="text-primary">버튼</h4>
+            <button type="button">선택자 적용안함</button>
+            <button type="button" class="btn">선택자 적용함</button>
+
+            <h4 class="text-primary"> button 태그 사용 </h4>
+            <button type="button" class="btn btn-default">버튼</button>
+            <button type="button" class="btn btn-primary">버튼</button>
+            <button type="button" class="btn btn-success">버튼</button>
+            <button type="button" class="btn btn-info">버튼</button>
+            <button type="button" class="btn btn-warning">버튼</button>
+            <button type="button" class="btn btn-danger">버튼</button>
+            <button type="button" class="btn btn-link">버튼</button>
+            
+            <br>
+            <a href="a" class="btn btn-primary" role="button">중요한 버튼</a>
+            <br>
+            <input type="button" class="btn btn-danger" value="위험을 나타내는 버튼">
+            <br><br>
+            <button type="button" class="btn btn-primary btn-lg">버튼</button>
+            <button type="button" class="btn btn-primary btn-sm">버튼</button>
+            <button type="button" class="btn btn-primary btn-xs">버튼</button>
+            <button type="button" class="btn btn-primary">버튼</button>
+            <br><br>
+
+            <button type="button" class="btn btn-pramary btn-block">버튼</button>
+        </form>
+
+
+
+
+            
+    </div>
+    
+   
+
+
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/cesiumjs/1.78/Build/Cesium/Cesium.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</body>
+</html>

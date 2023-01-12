@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- form : 작성하는 방식, 선택방식 -->
+    <form action="http://www.naver.com"> <!-- (from) method=", " action=", " name="" -->
+        <fieldset>      <!-- 경계선 -->
+            <legend>개인정보</legend>       <!-- 경계선 안에 넣을때 -->
+            <label for="id">*아이디</label>     <!-- required: 필수 입력사항(값이 없으면 넘어갈 수 없음)-->
+            <input type="text" name="id" id="id" autofocus required placeholder="하이폰 생략">
+            <br>
+            <label for="pwd">*비밀번호</label>
+            <input type="password" name="pwd" id="pwd" required size="50">
+            <br>
+            <label for="time">상영시간</label>      <!-- readonly: 기본값을 수정할 수 없다. -->
+            <input type="text" name="time" id="time" value="오전:09시00 ~ 12:00" readonly>
+            <br>
+        </fieldset>
+        <fieldset>
+            <legend>기본정보 선택</legend>
+        <!-- 라디오 버튼 -->    <!-- 하나로 묶이는 똑같은 name 속성을 사용해야함 -->
+            <input type="radio" name="subject" value="java" checked>JAVA
+            <input type="radio" name="subject" value="html">HTML
+            <input type="radio" name="subject" value="sql">SQL
+            <br>
+            <input type="radio" name="grade" value="1">1학년
+            <input type="radio" name="grade" value="2">2학년
+            <input type="radio" name="grade" value="3">3학년
+            <br>
+        <!-- 체크박스 -->
+            <input type="checkbox" name="habby" value="축구">축구
+            <input type="checkbox" name="habby" value="야구">야구
+            <input type="checkbox" name="habby" value="농구">농구
+        </fieldset> 
+        <!-- 이메일을 입력받는 타입 email (이메일형식이 아닐시 값이 들어가지않음) -->
+        <label for="email">이메일</label>   
+        <input type="email" name="email" id="email" required>
+        <br>
+        <!-- 숫자를 입력받는 타입 number -->
+        <label for="number">주문수량</label>
+        <input type="number" name="number" id="number">
+        <br>
+        <!-- 색깔을 입력받는 타입 color -->
+        <label for="color">색상</label>
+        <input type="color" name="color" id="color">
+        <br>
+        <!-- 날짜를 입력받는 타입 date -->
+        <label for="start">시작일</label>
+        <input type="date" name="date" id="start">
+        <label for="end">종료일</label>
+        <input type="date" name="date" id="end">
+        <br>
+        <!-- 날짜와 시간까지 입력받는 타입 datetime-local -->
+        <label for="start">시작일</label>
+        <input type="datetime-local" name="date" id="start">
+        <label for="end">종료일</label>
+        <input type="datetime-local" name="date" id="end">
+        <br>
+        <!-- 선택항목을 나타내는 타입 select - option -->
+        <label for="job">직업선택</label>
+        <select name="job" size="4" multiple>
+            <option>--선택--</option>
+            <option>기자</option>
+            <option>개발자</option>
+            <option>경호원</option>
+        </select>
+        <br>
+        <!-- 한줄밖에 못쓰는text타입을 크게 늘린 textarea -->
+        <label for="content">상품소개</label>
+        <textarea name="content" id="content" rows="10" cols="30" placeholder="상품소개"></textarea>
+        <br>
+        <label for="fileup">첨부파일</label>
+        <input type="file" multiple>
+        <!-- 버튼 -->   
+        <input type="submit" value="회원가입">  <!-- submit: 입력한 정보들을 action으로 전송 -->
+        <input type="reset" value="취소">   <!-- reset: 입력한 값들을 취소 -->
+        <input type="button" value="메세지 실행" onclick="alert('메세지 보여주기')">   <!-- 사용자 지정버튼 -->
+        <button type="button" onclick="alert('메세지 보여주기')">메세지 실행2</button>
+    </form>
+    
+</body>
+</html>

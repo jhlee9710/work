@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <title>Document</title>
+
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <style>
+        .col-md-1, .col-md-8, .col-md-4, .col-md-12{
+            border: 1px solid red;
+        }
+        .row{
+            margin-bottom:4px;
+            margin-top: 4px;
+        }
+
+    </style>
+    
+</head>
+<body>
+
+    <div class="container"> <!-- container: 정해진 width값이 존재함(width 1170)  container-fluid: width100%값으로 나타내줌 -->
+        <h2 class="text-primary">기본테이블</h2>
+        <table>
+            <br>
+            <tr>
+                <td>번 호</td>
+                <td>제 목</td>
+                <td>글쓴이</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>테이블 테스트 테이블 테스트 테이블 테스트</td>
+                <td>홍길동</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>테이블 테스트 테이블 테스트 테이블 테스트</td>
+                <td>이순신</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>테이블 테스트 테이블 테스트 테이블 테스트</td>
+                <td>임꺽정</td>
+            </tr>
+        </table>
+
+        <h2 class="text-primary">class = "table"</h2>
+        <table class="table">
+            <br>
+            <tr>
+                <td>번 호</td>
+                <td>제 목</td>
+                <td>글쓴이</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>테이블 테스트 테이블 테스트 테이블 테스트</td>
+                <td>홍길동</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>테이블 테스트 테이블 테스트 테이블 테스트</td>
+                <td>이순신</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>테이블 테스트 테이블 테스트 테이블 테스트</td>
+                <td>임꺽정</td>
+            </tr>
+        </table>
+
+        <h2 class="text-primary">class = "table table-striped"</h2>
+        <table class="table table-striped">
+            <br>
+            <tr>
+                <td>번 호</td>
+                <td>제 목</td>
+                <td>글쓴이</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>테이블 테스트 테이블 테스트 테이블 테스트</td>
+                <td>홍길동</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>테이블 테스트 테이블 테스트 테이블 테스트</td>
+                <td>이순신</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>테이블 테스트 테이블 테스트 테이블 테스트</td>
+                <td>임꺽정</td>
+            </tr>
+        </table>
+        
+        <h2 class="text-primary">class = "table table-bordered"</h2>
+        <table class="table table-bordered">
+            <br>
+            <tr>
+                <td>번 호</td>
+                <td>제 목</td>
+                <td>글쓴이</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>테이블 테스트 테이블 테스트 테이블 테스트</td>
+                <td>홍길동</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>테이블 테스트 테이블 테스트 테이블 테스트</td>
+                <td>이순신</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>테이블 테스트 테이블 테스트 테이블 테스트</td>
+                <td>임꺽정</td>
+            </tr>
+        </table>
+
+        <h2 class="text-primary">class = "table table-hover"</h2>
+        <table class="table table-hover">
+            <br>
+            <tr>
+                <td>번 호</td>
+                <td>제 목</td>
+                <td>글쓴이</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>테이블 테스트 테이블 테스트 테이블 테스트</td>
+                <td>홍길동</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>테이블 테스트 테이블 테스트 테이블 테스트</td>
+                <td>이순신</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>테이블 테스트 테이블 테스트 테이블 테스트</td>
+                <td>임꺽정</td>
+            </tr>
+        </table>
+
+        <h2 class="text-primary">class = "table table-condensed"</h2>
+        <table class="table table-condensed">
+            <br>
+            <tr>
+                <td>번 호</td>
+                <td>제 목</td>
+                <td>글쓴이</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>테이블 테스트 테이블 테스트 테이블 테스트</td>
+                <td>홍길동</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>테이블 테스트 테이블 테스트 테이블 테스트</td>
+                <td>이순신</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>테이블 테스트 테이블 테스트 테이블 테스트</td>
+                <td>임꺽정</td>
+            </tr>
+        </table>
+
+        <h2 class="text-primary">class = "table tr class"</h2>
+        <!-- tr class="active|success|warrning|danger" -->
+        <table class="table table-condensed">
+            <br>
+            <tr class="active">
+                <td>번 호</td>
+                <td>제 목</td>
+                <td>글쓴이</td>
+            </tr>
+            <tr class="success">
+                <td>1</td>
+                <td>테이블 테스트 테이블 테스트 테이블 테스트</td>
+                <td>홍길동</td>
+            </tr>
+            <tr class="warrning">
+                <td>2</td>
+                <td>테이블 테스트 테이블 테스트 테이블 테스트</td>
+                <td>이순신</td>
+            </tr>
+            <tr class="danger">
+                <td>3</td>
+                <td>테이블 테스트 테이블 테스트 테이블 테스트</td>
+                <td>임꺽정</td>
+            </tr>
+        </table>
+            
+    </div>
+    
+   
+
+
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/cesiumjs/1.78/Build/Cesium/Cesium.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</body>
+</html>

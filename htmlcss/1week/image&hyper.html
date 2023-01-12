@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- 절대경로 -->
+    <h1>절대경로</h1>
+    <img src="C:\work\htmlcss\sea.jpg" alt="바다"/>
+
+    <br>
+    <!-- 상대경로 -->
+    <h1>상대경로</h1>
+    <img src="image\sea.jpg" alt="바다"/>
+    
+    
+    <br>
+    <!--url경로-->
+    <h1>url 사용하기</h1>
+    <img src="https://cdn.pixabay.com/photo/2019/08/01/12/36/illustration-4377408_960_720.png" />
+    <br>
+
+    <img src="sea.jpg" alt="바다" usemap="#seaarea">
+    <map name="seaarea">
+        <area shape="rect" coords="876,504,1022,637" href="http://www.naver.com" target="_blank">       <!-- 사진속 저 위치안에 하이퍼링크 생성 -->
+    </map>
+
+    <br>
+
+    <!--하이퍼링크-->
+   
+    <a href="tags.html">이번주 로또 1등 당첨</a><br>
+
+    <!--target, self, blank-->
+    <!--self, 기본값-->
+    <a href="tags.html" target="_self">이번주 로또 2등 당첨</a><br>
+    <a href="tags.html" target="_blank">이번주 로또 3등 당첨</a>
+
+</body>
+</html>
